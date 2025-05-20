@@ -1,0 +1,19 @@
+[project]
+name = "a2a"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "google-a2a",
+]
+
+[project.scripts]
+a2a = "a2a:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.uv.sources]
+google-a2a = { git = "https://ghfast.top/https://github.com/djsamseng/A2A", subdirectory = "samples/python", branch = "prefixPythonPackage" }
